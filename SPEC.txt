@@ -1,0 +1,10 @@
+Welcome to Ring Labs technical task. It’s quite a challenge, so we hope you enjoy your time solving it and show the best results possible.
+
+Create pilot test framework for testing New York Times open API (http://developer.nytimes.com/). The purpose of the test is to check filtering in Most Popular API(http://developer.nytimes.com/most_popular_api_v2.json#/README).
+Test scenario:
+1. Get response for most emailed articles for all-sections.
+2. Count articles number of each section.
+3. Get the list of sections from response.
+4. For each section: do request most emailed articles for specific section. Verify that all results in response have correct section and number of articles equal to counted from step 2.
+
+Please use standard technologies, tools and frameworks which you usually use in test frameworks creation.
