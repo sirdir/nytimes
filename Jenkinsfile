@@ -11,5 +11,10 @@ pipeline {
         sh 'ls -la'
       }
     }
+    stage('report') {
+      steps {
+        sh 'pwd'
+      }
+    }
   }
 }
