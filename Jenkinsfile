@@ -7,8 +7,17 @@ pipeline {
       }
     }
     stage('Test') {
-      steps {
-        sh 'ls -la'
+      parallel {
+        stage('test1') {
+          steps {
+            sh 'ls -la'
+          }
+        }
+        stage('test2') {
+          steps {
+            sh 'uname -a'
+          }
+        }
       }
     }
     stage('report') {
